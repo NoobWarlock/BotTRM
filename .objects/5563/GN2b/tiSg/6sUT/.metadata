@@ -1,0 +1,17 @@
+﻿{
+  "Id": "6sUT3clXVkW_jqyTcw2P5A",
+  "Reference": "W8KgJREsPE2rFZoONRoL3Q/6sUT3clXVkW_jqyTcw2P5A",
+  "ParentRef": "W8KgJREsPE2rFZoONRoL3Q/tiSgCQ_FSU-Fy5yRUeUrDg",
+  "Name": "Get Text '20.59'",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2021-03-27T20:25:59.555971Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=21.2.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=21.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-03-28T18:32:39.2527481Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=21.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://www.currency-calc.com/USD_MXN" ContentHash="OlhswFfgDkasjYD6dp0oag" DesignTimeRectangle="185, 278, 720, 46" FriendlyName="'1 Dollar'" FullSelectorArgument="&lt;webctrl id='exchange-main-description' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='exchange-main-description' tag='DIV' type='' aaname='1 Dollar =  20.59 Mexican Pesos' check:text='1 Dollar =  20.59 Mexican Pesos' /&gt;" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dollar (USD) to Mexican Peso (MXN) Currency Converter' /&gt;" SearchSteps="Selector" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">099iK7FvKB0-dgcioTt7_Qw</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="705f237850417cf354cbda0f0d199787.png" xmlns="">0a8VVQLR4MECflMIXiL5OXg</imageRef>
+</TargetAnchorable>

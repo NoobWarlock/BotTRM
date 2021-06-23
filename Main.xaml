@@ -1,0 +1,227 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="676,515" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="45">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.MobileAutomation.Contracts.Target</x:String>
+      <x:String>UiPath.MobileAutomation.Activities</x:String>
+      <x:String>UiPath.MobileAutomation.Models</x:String>
+      <x:String>UiPath.MobileAutomation.Activities.Enums</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="28">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MobileAutomation</AssemblyReference>
+      <AssemblyReference>UiPath.MobileAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.AmazonWebServices</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="BOT TRM" sap:VirtualizedContainerService.HintSize="242,234" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:UiElement" Name="vChrome" />
+      <Variable x:TypeArguments="x:String" Name="vStrPeso" />
+      <Variable x:TypeArguments="x:String" Name="vStrYuan" />
+      <Variable x:TypeArguments="x:String" Name="vStrLibra" />
+      <Variable x:TypeArguments="s:String[]" Name="vArrPeso" />
+      <Variable x:TypeArguments="s:String[]" Name="vArrLibra" />
+      <Variable x:TypeArguments="s:String[]" Name="vArrYuan" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Nueva pestaña" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OutUiElement="[vChrome]" Version="V1" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="376,1912" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text '1 Dollar'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NGetText_2">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.currency-calc.com/USD_MXN" ContentHash="OlhswFfgDkasjYD6dp0oag" DesignTimeRectangle="185, 278, 720, 46" FriendlyName="'1 Dollar'" FullSelectorArgument="&lt;webctrl id='exchange-main-description' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='exchange-main-description' tag='DIV' type='' aaname='1 Dollar =  20.59 Mexican Pesos' check:text='1 Dollar =  20.59 Mexican Pesos' /&gt;" ImageBase64="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" InformativeScreenshot="705f237850417cf354cbda0f0d199787.png" Reference="W8KgJREsPE2rFZoONRoL3Q/6sUT3clXVkW_jqyTcw2P5A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dollar (USD) to Mexican Peso (MXN) Currency Converter' /&gt;" SearchSteps="Selector" />
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[vStrPeso]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[vArrPeso]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[Split(vStrPeso,"=")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[vStrPeso]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[vArrPeso(1).Replace(" Mexican Pesos","")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[vStrPeso]" />
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="334,81" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://www.currency-calc.com/GBP_MXN" />
+            <uix:NGetText DisplayName="Get Text '1 Dollar'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NGetText_3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.currency-calc.com/USD_MXN" ContentHash="OlhswFfgDkasjYD6dp0oag" DesignTimeRectangle="185, 278, 720, 46" FriendlyName="'1 Dollar'" FullSelectorArgument="&lt;webctrl id='exchange-main-description' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='exchange-main-description' tag='DIV' type='' aaname='1 Dollar =  20.59 Mexican Pesos' check:text='1 Dollar =  20.59 Mexican Pesos' /&gt;" ImageBase64="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" InformativeScreenshot="705f237850417cf354cbda0f0d199787.png" Reference="W8KgJREsPE2rFZoONRoL3Q/6sUT3clXVkW_jqyTcw2P5A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dollar (USD) to Mexican Peso (MXN) Currency Converter' /&gt;" SearchSteps="Selector" />
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[vStrLibra]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[vArrLibra]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[Split(vStrLibra,"=")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[vStrLibra]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[vArrLibra(1).Replace(" Mexican Pesos","")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[vStrLibra]" />
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="334,81" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="https://www.currency-calc.com/CNY_MXN" />
+            <uix:NGetText DisplayName="Get Text '1 Dollar'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NGetText_4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.currency-calc.com/USD_MXN" ContentHash="OlhswFfgDkasjYD6dp0oag" DesignTimeRectangle="185, 278, 720, 46" FriendlyName="'1 Dollar'" FullSelectorArgument="&lt;webctrl id='exchange-main-description' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='exchange-main-description' tag='DIV' type='' aaname='1 Dollar =  20.59 Mexican Pesos' check:text='1 Dollar =  20.59 Mexican Pesos' /&gt;" ImageBase64="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" InformativeScreenshot="705f237850417cf354cbda0f0d199787.png" Reference="W8KgJREsPE2rFZoONRoL3Q/6sUT3clXVkW_jqyTcw2P5A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dollar (USD) to Mexican Peso (MXN) Currency Converter' /&gt;" SearchSteps="Selector" />
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[vStrYuan]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[vArrYuan]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[Split(vStrYuan,"=")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_6">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[vStrYuan]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[vArrYuan(1).Replace(" Mexican Pesos","")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[vStrYuan]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="lRLw-0jSDES6SmACR7mCLA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJYSURBVDhPjVNLbxJRGGXRxIUaN925c+/GhSbgwkU3bvVP8AN0bdWVaY2bmmgAIZAmEB5SnuUZwBJqSAo7gwnPAEMLTBgoT5k5fvcOmLRp1ZOczJ3Jd8+cc7/vag4PDx8mEgmt1+vVOp1OzkgkojWZTLc1/4NgMDhJpVIgEWQyGc6TkxO43e7Pq5K/w+/3D3w+H+r1OqDIAGTIsoxarTbX6/V3V2XXgzaLzVaLNqoQRspqBQQCgW92u32X3FzgwcHBbjQafU/u32rC4bC4qscr3wD3XrSQ/jmDoixRqVRQLpdRrVYvkEXMZrOgvVgJKLB+n+L+awFf82NYj8ckp0AQBFX5EkRRBDkAxe9zAYWyH1cXePBGwE5Iwnypxmi325jNZnw9Go1A3cHR0RG5UzCZTFhEVWC5XPKi/ljGS4cI7bsOf+91zzAcDvk6mUwil8shnU6j0Wjwb3QGqgB7if2Y49leF3pLH88/dXmBNBhwu+fn53A4HCgUCmg2m9wV+ykXCIVCIv9ArveSIzz9cIb5LzUCs9nr9dDpdECDBqvVymOwOKzVXIC1MR6PQ5IGfNNlrA8yn8/zg1tjsVj8icAPplgsokHD1GzU2RBxsjYyy6enp7DZbPB4PHC5XCiVSlyEC5C1HRoOo8ViMRsMBovRaDTTPfhCMJnN5o80NEVWvD5oSZIwnU7RouHjbbwCN4i3iHeIG1tbW0/IBZtx3j4GNvZs/MmByDZchQ3iTeIme+7v73tZB9aXjV08dgGpARNW/E9sb29vxmKxxxRVx0ixdDQXumAw+Og3pkipLWIoFoYAAAAASUVORK5CYII=" InformativeScreenshot="ed56c6a2b0bca210aff0f2730376ea62.png" Reference="W8KgJREsPE2rFZoONRoL3Q/tiSgCQ_FSU-Fy5yRUeUrDg" Selector="&lt;html app='chrome.exe' title='Dollar (USD) to Mexican Peso (MXN) Currency Converter' /&gt;" Url="https://www.currency-calc.com/USD_MXN" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="Reporte.xlsx">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="376,433" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelWriteCell Cell="A1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="Hoja1" Text="[&quot;El Dolar esta a: $&quot; + vStrPeso + &quot; Pesos&quot;]" />
+            <ui:ExcelWriteCell Cell="A2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="Hoja1" Text="[&quot;La Libra esta a: $&quot; +vStrLibra + &quot; Pesos&quot;]" />
+            <ui:ExcelWriteCell Cell="A3" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_3" SheetName="Hoja1" Text="[&quot;El Yuan esta a: $&quot; +vStrYuan + &quot; Pesos&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ExcelApplicationScope>
+  </Sequence>
+</Activity>

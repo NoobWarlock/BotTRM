@@ -1,0 +1,17 @@
+﻿{
+  "Id": "tiSgCQ_FSU-Fy5yRUeUrDg",
+  "Reference": "W8KgJREsPE2rFZoONRoL3Q/tiSgCQ_FSU-Fy5yRUeUrDg",
+  "ParentRef": "W8KgJREsPE2rFZoONRoL3Q/GN2bR21wc0Kj95zPOhFw8g",
+  "Name": "Use Browser Chrome",
+  "Type": "Screen",
+  "TaxonomyType": "Screen",
+  "Created": "2021-03-27T18:25:55.2805185Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=21.2.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=21.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-03-27T20:18:54.7397098Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=21.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

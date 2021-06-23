@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="lRLw-0jSDES6SmACR7mCLA" Selector="&lt;html app='chrome.exe' title='Dollar (USD) to Mexican Peso (MXN) Currency Converter' /&gt;" Url="https://www.currency-calc.com/USD_MXN" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="IconBase64" xmlns="">03nFJ1rgGEEiF5f6bnyYpJA</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="ed56c6a2b0bca210aff0f2730376ea62.png" xmlns="">01MnesD05pU-AUEGitEbvWA</imageRef>
+</TargetApp>
